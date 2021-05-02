@@ -5,6 +5,11 @@ body {
     font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* Typography */
 h1,
 h2,
@@ -20,6 +25,28 @@ h1 {
     margin: 0;
 }
 
+p,
+.article-info {
+    font-family: "Ubuntu";
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+a {
+    color: #1792d2;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
 /* logo subtitle */
 .subtitle {
     font-family: "Ubuntu";
@@ -33,15 +60,6 @@ h1 {
     font-size: 1.5rem;
 }
 
-p,
-.article-info {
-    font-family: "Ubuntu";
-}
-
-p {
-    font-size: 1.125rem;
-}
-
 .article-read-more {
     font-family: "Ubuntu";
     font-weight: 700;
@@ -52,7 +70,7 @@ p {
 
 .article-read-more:hover,
 .article-read-more:focus {
-    color: rgb(21, 63, 190);
+    color: #143774;
     text-decoration: underline;
 }
 
@@ -68,7 +86,7 @@ p {
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
 }
@@ -76,6 +94,14 @@ p {
 header {
     background-color: #f8f8f8;
     padding: 2em 0;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 25%;
 }
 
 /* navigation */
@@ -111,8 +137,8 @@ nav a:focus {
     color: #707070;
 }
 
-@media (max-width: 720px) {
-    .container-nav {
+@media (max-width: 780px) {
+    .container-flex {
         flex-direction: column;
     }
 

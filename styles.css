@@ -75,6 +75,7 @@ strong {
 
 .article-info {
     font-size: 0.875rem;
+    margin: 2em 0;
 }
 
 /* layout */
@@ -151,4 +152,12 @@ nav a:focus {
     nav li {
         margin-left: 2em;
     }
+}
+
+/* articles  */
+
+.article-featured {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
 }
